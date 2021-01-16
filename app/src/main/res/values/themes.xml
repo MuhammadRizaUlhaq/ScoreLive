@@ -1,0 +1,37 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.PremierLeague" parent="Theme.MaterialComponents.DayNight">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/yellow</item>
+        <item name="colorPrimaryVariant">@color/yellow_dark</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/blue_grey</item>
+        <item name="colorSecondaryVariant">@color/blue_grey_dark</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        <item name="android:actionBarStyle">@style/Theme.PremierLeague.ActionBar</item>
+        <item name="android:titleTextStyle">@style/Theme.PremierLeague.TitleTextStyle</item>
+        <item name="iconTint">@android:color/darker_gray</item>
+    </style>
+    
+    <style name="Theme.PremierLeague.ActionBar" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="background">?attr/colorPrimary</item>
+        <item name="android:titleTextStyle">@style/Theme.PremierLeague.TitleTextStyle</item>
+    </style>
+
+    <style name="Theme.PremierLeague.TitleTextStyle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+    </style>
+
+    <style name="Theme.PremierLeague.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.PremierLeague.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.PremierLeague.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

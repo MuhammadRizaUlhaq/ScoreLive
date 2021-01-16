@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.eventdetails.EventDetailsFragment">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp" >
+
+        <TextView
+            android:id="@+id/tvEventDetailsVersus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="@string/value_event_versus" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?attr/selectableItemBackground">
+
+            <ImageView
+                android:id="@+id/imgEventDetailsHomeTeam"
+                android:layout_width="@dimen/image_item_width"
+                android:layout_height="@dimen/image_item_width"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                tools:src="@android:color/darker_gray"
+                android:layout_marginRight="16dp"
+                android:contentDescription="@string/text_home_team" />
+
+            <TextView
+                android:id="@+id/tvEventDetailsHomeScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="16dp"
+                android:gravity="center_vertical"
+                app:layout_constraintStart_toEndOf="@+id/imgEventDetailsHomeTeam"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:text="@string/text_dash" />
+
+            <LinearLayout
+                android:id="@+id/linearLayoutEventDetails"
+                android:orientation="vertical"
+                app:layout_constraintStart_toEndOf="@id/imgEventDetailsHomeTeam"
+                app:layout_constraintEnd_toStartOf="@id/imgEventDetailsAwayTeam"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/image_item_width">
+
+
+                <TextView
+                    android:id="@+id/tvEventDetailsTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="14sp"
+                    android:text="@string/value_event_time"/>
+
+                <TextView
+                    android:id="@+id/tvEventDetailsDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="12sp"
+                    android:text="@string/value_event_date"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvEventDetailsAwayScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:layout_marginRight="16dp"
+                android:gravity="center"
+                app:layout_constraintEnd_toStartOf="@+id/imgEventDetailsAwayTeam"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:text="@string/text_dash" />
+
+            <ImageView
+                android:id="@+id/imgEventDetailsAwayTeam"
+                android:layout_width="@dimen/image_item_width"
+                android:layout_height="@dimen/image_item_width"
+                android:layout_gravity="end"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                tools:src="@android:color/darker_gray"
+                android:contentDescription="@string/text_away_team" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_vertical_margin">
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:text="@string/text_venue"
+                    android:textStyle="bold"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginEnd="5dp" />
+
+                <TextView
+                    android:id="@+id/tvEventDetailsVenue"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    tools:text="@string/text_placeholder" />
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:text="@string/text_season"
+                    android:textStyle="bold"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginEnd="5dp" />
+
+                <TextView
+                    android:id="@+id/tvEventDetailsSeason"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    tools:text="@string/text_placeholder" />
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:text="@string/text_video"
+                    android:textStyle="bold"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginEnd="5dp" />
+
+                <TextView
+                    android:id="@+id/tvEventDetailsVideoLink"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    tools:text="@string/text_placeholder" />
+
+            </TableRow>
+
+        </TableLayout>
+    </LinearLayout>
+</ScrollView>

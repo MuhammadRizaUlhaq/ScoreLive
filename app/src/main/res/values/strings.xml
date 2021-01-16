@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Score Live</string>
+    <string name="text_team">Team</string>
+    <string name="text_stadium">Stadium</string>
+    <string name="title_favorites">Favorites</string>
+    <string name="title_teams">Teams</string>
+    <string name="title_games">Games</string>
+    <string name="title_activity_team_details">TeamDetailsActivity</string>
+    <string name="text_description">Description</string>
+    <string name="text_details">Details</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="text_placeholder">Placeholder Text</string>
+    <string name="text_stadium_location">Location</string>
+    <string name="text_founded">Founded</string>
+    <string name="text_stadium_capacity">Stadium Capacity</string>
+    <string name="value_stadium_capacity">%d people</string>
+    <string name="text_website">Website</string>
+    <string name="value_event_versus">%s vs %s</string>
+    <string name="value_event_time">HH:mm</string>
+    <string name="value_event_date">EEE, dd MMM yyyy</string>
+    <string name="text_home_team">Home Team</string>
+    <string name="text_away_team">Away Team</string>
+    <string name="text_dash">-</string>
+    <string name="text_event">Event</string>
+    <string name="title_activity_event_details">EventDetailsActivity</string>
+    <string name="text_venue">Venue</string>
+    <string name="text_season">Season</string>
+    <string name="text_video">Video</string>
+    <string name="text_matches">Matches</string>
+    <string name="text_favorites">Favorites</string>
+</resources>

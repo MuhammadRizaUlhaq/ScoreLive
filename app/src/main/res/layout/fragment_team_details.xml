@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.teamdetails.TeamDetailsFragment">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_vertical_margin">
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="@string/text_founded"
+                android:textStyle="bold"
+                android:layout_marginRight="5dp"
+                android:layout_marginEnd="5dp" />
+
+            <TextView
+                android:id="@+id/tvTeamFounded"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                tools:text="@string/text_placeholder" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="@string/text_stadium"
+                android:textStyle="bold"
+                android:layout_marginRight="5dp"
+                android:layout_marginEnd="5dp" />
+
+            <TextView
+                android:id="@+id/tvTeamStadium"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                tools:text="@string/text_placeholder" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="@string/text_stadium_location"
+                android:textStyle="bold"
+                android:layout_marginRight="5dp"
+                android:layout_marginEnd="5dp" />
+
+            <TextView
+                android:id="@+id/tvTeamStadiumLocation"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                tools:text="@string/text_placeholder" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="@string/text_stadium_capacity"
+                android:textStyle="bold"
+                android:layout_marginRight="5dp"
+                android:layout_marginEnd="5dp" />
+
+            <TextView
+                android:id="@+id/tvStadiumCapacity"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                tools:text="@string/text_placeholder" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="@string/text_website"
+                android:textStyle="bold"
+                android:layout_marginRight="5dp"
+                android:layout_marginEnd="5dp" />
+
+            <TextView
+                android:id="@+id/tvTeamWebsite"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                tools:text="@string/text_placeholder" />
+
+        </TableRow>
+
+    </TableLayout>
+
+</ScrollView>
